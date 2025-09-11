@@ -4,6 +4,8 @@ site_url: https://example.com
 # Navegação
 nav:
   - Início: index.md
+  - Visão de Produto e Projeto:
+      - Cenário Atual do Cliente e do Negócio: produto.md
 
 theme:
   name: material
