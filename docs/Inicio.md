@@ -35,7 +35,7 @@ A criação dessa presença digital estruturada e estratégica permitirá à Nih
 ## Equipe
 A equipe responsável pelo desenvolvimento deste projeto é composta por:
 
-<p align="center"><strong>Tabela 1:</strong> Integrantes do time</p>
+<p align="center"><strong>Tabela 1:</strong> Integrantes da equipe</p>
 
 <table>
     <tr>
