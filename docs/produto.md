@@ -7,6 +7,7 @@
 | 1.4 | 13/09/2025 | Inserção, estilização e formatação no gitpages | [João Vitor Merlin](https://github.com/jvopBR) |
 
 
+
 # 1.1 Introdução ao Negócio e Contexto
 
 A **Nihon Automação** atua no mercado desde 1995, inicialmente com foco na venda de software e assistência técnica para comércios e supermercados, em um contexto de baixa concorrência na área de tecnologia.  
