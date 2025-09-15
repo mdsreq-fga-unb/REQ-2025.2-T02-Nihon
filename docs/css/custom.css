@@ -14,9 +14,3 @@
   border: 1px solid #ddd;    /* Bordas leves */
   white-space: normal;       /* Permite quebra de linha */
 }
-
-/* Cabeçalho diferenciado */
-.md-typeset table:not([class]) th {
-  background-color: #f5f5f5; /* Cor suave no header */
-  font-weight: 600;
-}
