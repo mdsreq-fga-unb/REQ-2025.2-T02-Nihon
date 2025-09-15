@@ -1,0 +1,22 @@
+/* Evita tabelas esticadas */
+.md-typeset table:not([class]) {
+  width: auto;               /* Faz a tabela ocupar só o necessário */
+  max-width: 100%;           /* Garante que não estoure a tela */
+  margin: 1em auto;          /* Centraliza a tabela */
+  border-collapse: collapse; /* Bordas mais compactas */
+}
+
+/* Ajuste de células */
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+  padding: 6px 12px;         /* Espaçamento interno */
+  vertical-align: top;       /* Alinha textos no topo */
+  border: 1px solid #ddd;    /* Bordas leves */
+  white-space: normal;       /* Permite quebra de linha */
+}
+
+/* Cabeçalho diferenciado */
+.md-typeset table:not([class]) th {
+  background-color: #f5f5f5; /* Cor suave no header */
+  font-weight: 600;
+}
