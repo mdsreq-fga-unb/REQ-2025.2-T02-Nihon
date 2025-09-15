@@ -1,3 +1,11 @@
+| Versão | Data | Descrição  | Autor    |   
+| :-----: | :----: | :----------: | :------------: |
+| 1.0 | 01/09/2025 | Versão inicial | [Yasmin Dayrell](https://github.com/YasminDayrell), [Guilherme Flyan](https://github.com/GFlyan)|
+| 1.1 | 05/09/2025 | Correção após orientações | [Yasmin Dayrell](https://github.com/YasminDayrell), [Guilherme Flyan](https://github.com/GFlyan)|
+| 1.2 | 08/09/2025 | Versão corrigida após devolutiva | Todos os membros da equipe|
+| 1.3 | 13/09/2025 | Inserção dos itens 2.3 até 6.1 | [Yasmin Dayrell](https://github.com/YasminDayrell), [Guilherme Flyan](https://github.com/GFlyan) [Marjorie Mitzi](https://github.com/Marjoriemitzi) |
+| 1.4 | 13/09/2025 | Inserção, estilização e formatação no gitpages | [João Vitor Merlin](https://github.com/jvopBR) |
+
 # 4 Cronograma e Entregas
 
 | **Sprint** | **Início** | **Fim** | **Objetivo Principal** | **Entregas Esperadas** | **Validação do Cliente** |
