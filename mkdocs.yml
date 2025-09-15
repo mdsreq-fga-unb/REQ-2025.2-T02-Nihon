@@ -8,6 +8,7 @@ nav:
       - Cenário Atual do Cliente e do Negócio: produto.md
       - Solução Proposta: solucao.md
       - Estrátegias de Engenharia de Software: estrategias.md
+      - Cronograma e Entregas: cronograma.md
 
 theme:
   name: material
