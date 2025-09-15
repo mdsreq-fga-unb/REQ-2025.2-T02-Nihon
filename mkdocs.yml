@@ -7,10 +7,10 @@ nav:
   - Visão de Produto e Projeto:
       - Cenário Atual do Cliente e do Negócio: produto.md
       - Solução Proposta: solucao.md
-      - Estrátegias de Engenharia de Software: estrategias.md
+      - Estratégias de Engenharia de Software: estrategias.md
       - Cronograma e Entregas: cronograma.md
       - Interação entre equipe e cliente: interacao.md
-      - Lições aprendidas: licoes.md
+      - Lições Aprendidas: licoes.md
 
 theme:
   name: material
@@ -21,39 +21,46 @@ theme:
     logo: fontawesome/solid/house
   features:
     - navigation.footer
+    - navigation.instant  
+    - navigation.tabs      
+    - content.code.copy     
+    - content.tabs.link   
+    - content.tooltips      
+    - content.tables       
   palette:
     # Dark mode
     - scheme: slate
       toggle:
         icon: material/weather-sunny
-        name: Dark Mode
+        name: Modo Claro
       primary: blue
       accent: deep purple
     # Light mode
     - scheme: default
       toggle:
         icon: material/weather-night
-        name: Light Mode
+        name: Modo Escuro
       primary: blue
       accent: deep purple
 
 markdown_extensions:
   - attr_list
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - tables
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.snippets
+  - pymdownx.inlinehilite
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.superfences:
-      custom_fences:
-        - name: "mermaid"
-          class: "mermaid"
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.snippets
-  - pymdownx.tabbed:
-      alternate_style: true
-  - admonition
-  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+# Extra CSS para ajustar tabelas
+extra_css:
+  - css/custom.css
