@@ -49,16 +49,20 @@ A solução será uma **aplicação web institucional**, com funcionalidades de 
 ## 2.3 Tecnologias a Serem Utilizadas
 
 Frontend:
-Next.js: Será responsável por renderizar as páginas de categorias, produtos e projetos, tanto para usuários comuns quanto para o administrador.
+
+- Next.js: Será responsável por renderizar as páginas de categorias, produtos e projetos, tanto para usuários comuns quanto para o administrador.
 
 Backend:
-API Routes do Next.js: O backend será implementado dentro do próprio projeto Next.js, usando rotas serverless.
+
+- API Routes do Next.js: O backend será implementado dentro do próprio projeto Next.js, usando rotas serverless.
 
 Database:
-Supabase: Banco de dados PostgreSQL gerenciado na nuvem.
+
+- Supabase: Banco de dados PostgreSQL gerenciado na nuvem.
 
 Deploy:
-Vercel: Plataforma de hospedagem que suporta Next.js nativamente, incluindo SSR, API Routes e CDN global. Será responsável por colocar frontend e backend no ar de forma integrada, com deploy contínuo a partir do GitHub.
+
+- Vercel: Plataforma de hospedagem que suporta Next.js nativamente, incluindo SSR, API Routes e CDN global. Será responsável por colocar frontend e backend no ar de forma integrada, com deploy contínuo a partir do GitHub.
 
 ---
 
