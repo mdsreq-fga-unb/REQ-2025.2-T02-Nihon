@@ -3,6 +3,8 @@
 | 1.0 | 01/09/2025 | Versão inicial | [Yasmin Dayrell](https://github.com/YasminDayrell), [Guilherme Flyan](https://github.com/GFlyan)|
 | 1.1 | 05/09/2025 | Correção após orientações | [Yasmin Dayrell](https://github.com/YasminDayrell), [Guilherme Flyan](https://github.com/GFlyan)|
 | 1.2 | 08/09/2025 | Versão corrigida após devolutiva | Todos os membros da equipe|
+| 1.3 | 13/09/2025 | Inserção dos itens 2.3 até 6.1 | [Yasmin Dayrell](https://github.com/YasminDayrell), [Guilherme Flyan](https://github.com/GFlyan) [Marjorie Mitzi](https://github.com/Marjoriemitzi) |
+| 1.4 | 13/09/2025 | Inserção, estilização e formatação no gitpages | [João Vitor Merlin](https://github.com/jvopBR) |
 
 # 2 SOLUÇÃO PROPOSTA
 
@@ -42,7 +44,9 @@ A solução será uma **aplicação web institucional**, com funcionalidades de 
   
 - **Painel administrativo (OE6):** área para que a própria equipe da Nihon possa atualizar produtos, fornecedores e casos de sucesso, permitindo que o site esteja de acordo com o estoque e situação atual da empresa.
 
-2.3 Tecnologias a Serem Utilizadas
+---
+
+## 2.3 Tecnologias a Serem Utilizadas
 
 Frontend:
 Next.js: Será responsável por renderizar as páginas de categorias, produtos e projetos, tanto para usuários comuns quanto para o administrador.
@@ -55,6 +59,8 @@ Supabase: Banco de dados PostgreSQL gerenciado na nuvem.
 
 Deploy:
 Vercel: Plataforma de hospedagem que suporta Next.js nativamente, incluindo SSR, API Routes e CDN global. Será responsável por colocar frontend e backend no ar de forma integrada, com deploy contínuo a partir do GitHub.
+
+---
 
 # 2.4 Pesquisa de Mercado e Análise Competitiva
 
