@@ -23,10 +23,6 @@ theme:
     - navigation.footer
     - navigation.instant  
     - navigation.tabs      
-    - content.code.copy     
-    - content.tabs.link   
-    - content.tooltips      
-    - content.tables       
   palette:
     # Dark mode
     - scheme: slate
