@@ -9,6 +9,8 @@ nav:
       - Solução Proposta: solucao.md
       - Estrátegias de Engenharia de Software: estrategias.md
       - Cronograma e Entregas: cronograma.md
+      - Interação entre equipe e cliente: interação.md
+      - Lições aprendidas: licoes.md
 
 theme:
   name: material
