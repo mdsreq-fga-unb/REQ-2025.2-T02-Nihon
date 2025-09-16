@@ -1,0 +1,908 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://example.com/estrategias/">
+      
+      
+        <link rel="prev" href="../solucao/">
+      
+      
+        <link rel="next" href="../cronograma/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>Estratégias de Engenharia de Software - Nihon Automação</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.e53b48f4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,400,400i,700,700i%7CRed+Hat+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Merriweather Sans";--md-code-font:"Red Hat Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#3-estrategias-de-engenharia-de-software" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Nihon Automação" class="md-header__button md-logo" aria-label="Nihon Automação" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M277.8 8.6c-12.3-11.4-31.3-11.4-43.5 0l-224 208c-9.6 9-12.8 22.9-8 35.1S18.8 272 32 272h16v176c0 35.3 28.7 64 64 64h288c35.3 0 64-28.7 64-64V272h16c13.2 0 25-8.1 29.8-20.3s1.6-26.2-8-35.1zM240 320h32c26.5 0 48 21.5 48 48v96H192v-96c0-26.5 21.5-48 48-48"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Nihon Automação
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Estratégias de Engenharia de Software
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="deep-purple"  aria-label="Modo Claro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo Claro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="deep-purple"  aria-label="Modo Escuro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo Escuro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Início
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../produto/" class="md-tabs__link">
+          
+  
+  
+  Visão de Produto e Projeto
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../video/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Vídeo de Apresentação
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Nihon Automação" class="md-nav__button md-logo" aria-label="Nihon Automação" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M277.8 8.6c-12.3-11.4-31.3-11.4-43.5 0l-224 208c-9.6 9-12.8 22.9-8 35.1S18.8 272 32 272h16v176c0 35.3 28.7 64 64 64h288c35.3 0 64-28.7 64-64V272h16c13.2 0 25-8.1 29.8-20.3s1.6-26.2-8-35.1zM240 320h32c26.5 0 48 21.5 48 48v96H192v-96c0-26.5 21.5-48 48-48"/></svg>
+
+    </a>
+    Nihon Automação
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Início
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Visão de Produto e Projeto
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Visão de Produto e Projeto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../produto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cenário Atual do Cliente e do Negócio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../solucao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Solução Proposta
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Estratégias de Engenharia de Software
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Estratégias de Engenharia de Software
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#31-estrategia-priorizada" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Estratégia Priorizada
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-quadro-comparativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Quadro Comparativo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#33-justificativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 Justificativa
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cronograma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cronograma e Entregas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Interação entre equipe e cliente
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../licoes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lições Aprendidas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Vídeo de Apresentação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#31-estrategia-priorizada" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Estratégia Priorizada
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-quadro-comparativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Quadro Comparativo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#33-justificativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 Justificativa
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Versão</th>
+<th style="text-align: center;">Data</th>
+<th style="text-align: center;">Descrição</th>
+<th style="text-align: center;">Autor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: center;">01/09/2025</td>
+<td style="text-align: center;">Versão inicial</td>
+<td style="text-align: center;"><a href="https://github.com/YasminDayrell">Yasmin Dayrell</a>, <a href="https://github.com/GFlyan">Guilherme Flyan</a></td>
+</tr>
+<tr>
+<td style="text-align: center;">1.1</td>
+<td style="text-align: center;">05/09/2025</td>
+<td style="text-align: center;">Correção após orientações</td>
+<td style="text-align: center;"><a href="https://github.com/YasminDayrell">Yasmin Dayrell</a>, <a href="https://github.com/GFlyan">Guilherme Flyan</a></td>
+</tr>
+<tr>
+<td style="text-align: center;">1.2</td>
+<td style="text-align: center;">08/09/2025</td>
+<td style="text-align: center;">Versão corrigida após devolutiva</td>
+<td style="text-align: center;">Todos os membros da equipe</td>
+</tr>
+<tr>
+<td style="text-align: center;">1.3</td>
+<td style="text-align: center;">13/09/2025</td>
+<td style="text-align: center;">Inserção dos itens 2.3 até 6.1</td>
+<td style="text-align: center;"><a href="https://github.com/YasminDayrell">Yasmin Dayrell</a>, <a href="https://github.com/GFlyan">Guilherme Flyan</a> <a href="https://github.com/Marjoriemitzi">Marjorie Mitzi</a></td>
+</tr>
+<tr>
+<td style="text-align: center;">1.4</td>
+<td style="text-align: center;">13/09/2025</td>
+<td style="text-align: center;">Inserção, estilização e formatação no gitpages</td>
+<td style="text-align: center;"><a href="https://github.com/jvopBR">João Vitor Merlin</a></td>
+</tr>
+</tbody>
+</table>
+<h1 id="3-estrategias-de-engenharia-de-software">3 Estratégias de Engenharia de Software</h1>
+<h2 id="31-estrategia-priorizada">3.1 Estratégia Priorizada</h2>
+<ul>
+<li>
+<p><strong>Abordagem:</strong> Ágil</p>
+</li>
+<li>
+<p><strong>Ciclo de Vida:</strong> Ágil</p>
+</li>
+<li>
+<p><strong>Processo:</strong> ScrumXP  </p>
+</li>
+</ul>
+<h2 id="32-quadro-comparativo">3.2 Quadro Comparativo</h2>
+<p>O quadro a seguir tem a finalidade de justificar a escolha da estratégia tomada apresentando um comparativo entre as características do processo escolhido <strong>ScrumXP</strong> e o processo que se alinha com a mesma abordagem e ciclo de vida definidos, o <strong>FDD</strong>. Vale ressaltar que ambos os processos possuem foco em práticas técnicas específicas, e o ScrumXP utiliza o framework ágil Scrum para organizar e coordenar o trabalho.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Características</strong></th>
+<th><strong>ScrumXP</strong></th>
+<th><strong>FDD</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Abordagem Geral</strong></td>
+<td>Ciclo de vida ágil, priorizando valor para o cliente em pequenas entregas contínuas. Ideal para projetos de curta duração, com feedback rápido e adaptação constante.</td>
+<td>Foco em modelagem e planejamento detalhado antes de construir, podendo atrasar a primeira entrega funcional.</td>
+</tr>
+<tr>
+<td><strong>Estrutura de Processos</strong></td>
+<td>Simples e leve: papéis claros (PO, SM, Time), backlog priorizado e sprints curtas (2 semanas) que entregam incrementos de valor.</td>
+<td>Estrutura formal com 5 fases (modelagem de domínio, lista de funcionalidades, planejamento, design, build), exigindo mais tempo antes de gerar resultados visíveis.</td>
+</tr>
+<tr>
+<td><strong>Flexibilidade de Requisitos</strong></td>
+<td>Alta — backlog pode ser re-planejado a cada sprint, permitindo que o cliente reoriente prioridades de forma contínua.</td>
+<td>Menor — mudanças no escopo podem gerar retrabalho, pois impactam toda a lista de funcionalidades planejada.</td>
+</tr>
+<tr>
+<td><strong>Colaboração com Cliente</strong></td>
+<td>Envolvimento frequente em cada sprint review, garantindo que o produto final esteja alinhado às expectativas e identidade da Nihon.</td>
+<td>Participação do cliente concentrada principalmente na fase inicial, com menos feedback contínuo.</td>
+</tr>
+<tr>
+<td><strong>Complexidade do Processo</strong></td>
+<td>Baixa — fácil para equipes universitárias compreenderem e adotarem rapidamente.</td>
+<td>Moderada/alta — exige maior disciplina na modelagem e planejamento antes de iniciar a construção.</td>
+</tr>
+<tr>
+<td><strong>Qualidade Técnica</strong></td>
+<td>Fortemente apoiada por práticas do XP (integração contínua, refatoração, pair programming), melhorando o aprendizado e a manutenibilidade do código.</td>
+<td>Boa qualidade técnica, mas menos orientada a práticas colaborativas e de melhoria contínua.</td>
+</tr>
+<tr>
+<td><strong>Risco de Projeto</strong></td>
+<td>Reduzido — o cliente vê resultados cedo, permitindo corrigir a direção rapidamente e evitar desperdício.</td>
+<td>Maior — se a modelagem inicial não for bem-feita, pode gerar atrasos ou funcionalidades que não atendem ao cliente.</td>
+</tr>
+<tr>
+<td><strong>Adaptação ao Projeto da Nihon</strong></td>
+<td>Excelente — permite entregas incrementais que já fortalecem a presença digital da Nihon e mostram valor desde os primeiros sprints.</td>
+<td>Pode atrasar a entrega de algo funcional, o que não é ideal para o objetivo de reposicionar a empresa rapidamente no digital.</td>
+</tr>
+<tr>
+<td><strong>Controle de Qualidade</strong></td>
+<td>Revisado a cada sprint, com testes automatizados e integração contínua garantindo estabilidade.</td>
+<td>Revisões mais espaçadas, podendo acumular problemas antes da fase de build.</td>
+</tr>
+<tr>
+<td><strong>Escalabilidade</strong></td>
+<td>Fácil de adaptar conforme a equipe cresce, bastando organizar papéis e backlog.</td>
+<td>Mais difícil de escalar sem rever toda a modelagem inicial.</td>
+</tr>
+<tr>
+<td><strong>Suporte a Equipes de Desenvolvimento</strong></td>
+<td>Focado em colaboração e auto-organização, o que é motivador para uma equipe pequena e em aprendizado.</td>
+<td>Processo mais rígido, que pode reduzir a autonomia da equipe.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="33-justificativa">3.3 Justificativa</h2>
+<p>Com base nas características do projeto e nos desafios enfrentados pela Nihon Automação, a escolha do processo <strong>ScrumXP</strong> é a mais adequada pelos seguintes motivos:</p>
+<ol>
+<li><strong>Adaptação ao Nível de Conhecimento da Equipe</strong></li>
+</ol>
+<p>O principal desafio do projeto é o nível técnico da equipe, que é formada por estudantes com pouca experiência profissional. O ScrumXP é ideal para este cenário, pois suas práticas, como <em>pair programming</em> (programação em par) e propriedade coletiva do código, incentivam a colaboração constante, a troca de conhecimento e o aprendizado contínuo. Isso ajuda a mitigar os riscos associados à inexperiência e a manter a equipe motivada.</p>
+<ol>
+<li><strong>Entregas Rápidas e Foco no Valor para o Negócio</strong></li>
+</ol>
+<p>A Nihon Automação precisa estabelecer sua presença digital de forma ágil para competir no mercado. O ScrumXP, com seus ciclos curtos (sprints de duas semanas), permite a entrega incremental de funcionalidades. Isso significa que a Nihon poderá ver partes funcionais do site, como a página inicial e os casos de sucesso, muito antes do fim do projeto, proporcionando uma percepção de progresso e permitindo a validação contínua para garantir que a solução agregue valor real ao negócio.</p>
+<ol>
+<li><strong>Alta Qualidade Técnica e Manutenibilidade</strong></li>
+</ol>
+<p>A solução exige a integração entre diferentes tecnologias (Next.JS, Node.js, Supabase) e precisa ser facilmente gerenciável pela equipe da Nihon através de um painel administrativo. As práticas de engenharia do XP (<em>Extreme Programming</em>), como testes contínuos e integração contínua, são focadas em garantir a qualidade técnica do código desde o início. Isso resulta em um produto final mais robusto, com menos erros e mais fácil de manter e atualizar no futuro.</p>
+<ol>
+<li><strong>Flexibilidade e Envolvimento do Cliente</strong></li>
+</ol>
+<p>O projeto busca traduzir a identidade da Nihon para o ambiente digital, o que exige um alinhamento constante com o cliente. A abordagem do Scrum, com reuniões de validação periódicas (a cada 3 semanas, conforme planejado), garante que o cliente participe ativamente do processo. Essa colaboração permite fazer ajustes rápidos com base no feedback, assegurando que o produto final atenda plenamente às expectativas e necessidades da empresa.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../solucao/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Solução Proposta">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Solução Proposta
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../cronograma/" class="md-footer__link md-footer__link--next" aria-label="Next: Cronograma e Entregas">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Cronograma e Entregas
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.footer", "navigation.instant", "navigation.tabs"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
