@@ -8,27 +8,13 @@
 
 # 4 Cronograma e Entregas
 
-| **Sprint** | **Início** | **Fim** | **Objetivo Principal** | **Entregas Esperadas** | **Validação do Cliente** |
-|------------|------------|---------|-------------------------|-------------------------|---------------------------|
-| **Sprint 0** | 01/09/2025 | 14/09/2025 | Elaboração da Visão do Produto | -Documento "Visão do Produto e Projeto" finalizado.
-- Análise de cenário e problema documentados.
-- Objetivos (OE1-OE6) e indicadores de sucesso definidos.
-- Escopo da solução e tecnologias escolhidas.
-- Backlog inicial do produto criado | -Alinhamento e aprovação do plano de projeto e da visão do produto |
-| **Sprint 1** | 15/09/2025 | 28/09/2025 | Planejamento e Configuração | - Backlog do produto detalhado e priorizado.
-- Arquitetura definida (NextJS e Supabase).
-- Ambiente de desenvolvimento configurado| - Arquitetura definida (Next.JS e Supabase) e ambiente de desenvolvimento configurado.
--Revisão do backlog e confirmação das prioridades iniciais. |
-| **Sprint 2** | 29/09/2025 | 12/10/2025 | -Construção do Site Institucional (MVP)| - Home page com design moderno e intuitivo (OE1).
-- Seção "Casos de Sucesso" (OE5).
-- Canais de contato direto (WhatsApp/E-mail) implementados (OE3).
-- Seção "Fornecedores Parceiros" (OE4).s | - Reunião de Validação 1: Apresentação do site inicial funcional para coletar feedback |
-| **Sprint 3** | 13/10/2025 | 26/10/2025 | -Implementação do Catálogo de Produtos | - Interface pública para visualização do catálogo de produtos e nichos de atuação (OE2, OE6).| - Alinhamentos pontuais para garantir que a exibição dos produtos atenda às expectativas. |
-| **Sprint 4** | 27/10/2025 | 09/11/2025 | -Desenvolvimento do Painel de Gerenciamento | Desenvolvimento do painel administrativo para que a equipe da Nihon possa gerenciar produtos, fornecedores e casos de sucesso (OE6). |- Reunião de Validação 2: Demonstração e validação da funcionalidade de gestão de conteúdo. |
-| **Sprint 5** | 10/11/2025 | 23/11/2025 | -Integração do Painel com o Site Público | - Conexão final entre o painel administrativo e a interface pública do site.
-- Testes de integração para garantir o funcionamento do sistema. 
-- Plataforma completa em ambiente de testes. | - Reunião de Validação 3: Homologação do produto final pelo cliente. |
-| **Sprint 6** | 24/11/2025 | 07/12/2025 | Homologação e Ajustes Finais | - Plataforma completa em ambiente de testes para validação pelo cliente.
-- Correção de bugs e implementação de ajustes finos com base no feedback recebido | -Reunião de Validação 3: Homologação do produto final pelo cliente, que irá revisar e aprovar a solução completa antes do lançamento. |
-
+| **Sprint**   | **Início**  | **Fim**     | **Objetivo Principal**                        | **Entregas Esperadas**                                                                                                                                                                                                 | **Validação do Cliente**                                                                                     |
+|--------------|-------------|-------------|-----------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| **Sprint 0** | 01/09/2025  | 14/09/2025  | Elaboração da Visão do Produto                | - Documento "Visão do Produto e Projeto" finalizado.<br>- Análise de cenário e problema documentados.<br>- Objetivos (OE1-OE6) e indicadores de sucesso definidos.<br>- Escopo da solução e tecnologias escolhidas.<br>- Backlog inicial do produto criado | - Alinhamento e aprovação do plano de projeto e da visão do produto                                           |
+| **Sprint 1** | 15/09/2025  | 28/09/2025  | Planejamento e Configuração                   | - Backlog do produto detalhado e priorizado.<br>- Arquitetura definida (NextJS e Supabase).<br>- Ambiente de desenvolvimento configurado                                                                                 | - Arquitetura definida e ambiente de desenvolvimento configurado.<br>- Revisão do backlog e confirmação das prioridades iniciais |
+| **Sprint 2** | 29/09/2025  | 12/10/2025  | Construção do Site Institucional (MVP)        | - Home page com design moderno e intuitivo (OE1).<br>- Seção "Casos de Sucesso" (OE5).<br>- Canais de contato direto (WhatsApp/E-mail) implementados (OE3).<br>- Seção "Fornecedores Parceiros" (OE4).                | - Reunião de Validação 1: Apresentação do site inicial funcional para coletar feedback                        |
+| **Sprint 3** | 13/10/2025  | 26/10/2025  | Implementação do Catálogo de Produtos         | - Interface pública para visualização do catálogo de produtos e nichos de atuação (OE2, OE6).                                                                                                                          | - Alinhamentos pontuais para garantir que a exibição dos produtos atenda às expectativas                      |
+| **Sprint 4** | 27/10/2025  | 09/11/2025  | Desenvolvimento do Painel de Gerenciamento    | - Desenvolvimento do painel administrativo para que a equipe da Nihon possa gerenciar produtos, fornecedores e casos de sucesso (OE6).                                                                                | - Reunião de Validação 2: Demonstração e validação da funcionalidade de gestão de conteúdo                    |
+| **Sprint 5** | 10/11/2025  | 23/11/2025  | Integração do Painel com o Site Público       | - Conexão final entre o painel administrativo e a interface pública do site.<br>- Testes de integração para garantir o funcionamento do sistema.<br>- Plataforma completa em ambiente de testes.                       | - Reunião de Validação 3: Homologação do produto final pelo cliente                                            |
+| **Sprint 6** | 24/11/2025  | 07/12/2025  | Homologação e Ajustes Finais                  | - Plataforma completa em ambiente de testes para validação pelo cliente.<br>- Correção de bugs e implementação de ajustes finos com base no feedback recebido                                                           | - Reunião de Validação 3: Homologação do produto final pelo cliente, que irá revisar e aprovar a solução completa antes do lançamento |
 
