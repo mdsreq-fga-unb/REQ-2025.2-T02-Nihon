@@ -5,7 +5,7 @@ import { FaWhatsapp, FaInstagram, FaMapMarkerAlt } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="w-full bg-white shadow-xl border-t border-gray-200 px-6 py-8">
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-80">
         
         {/* Logo e endereço */}
         <div className="flex flex-col items-center md:items-start text-gray-600">
@@ -47,13 +47,6 @@ export default function Footer() {
           >
             <FaWhatsapp /> Fale conosco
           </a>
-        </div>
-
-        {/* Ícones sociais e localização */}
-        <div className="flex items-center gap-6 text-2xl text-gray-500">
-          <FaWhatsapp className="hover:text-green-500 cursor-pointer" />
-          <FaInstagram className="hover:text-pink-500 cursor-pointer" />
-          <FaMapMarkerAlt className="hover:text-red-500 cursor-pointer" />
         </div>
       </div>
 
