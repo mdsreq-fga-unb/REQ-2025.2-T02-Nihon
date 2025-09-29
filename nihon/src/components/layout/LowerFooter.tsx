@@ -48,13 +48,6 @@ export default function Footer() {
             <FaWhatsapp /> Fale conosco
           </a>
         </div>
-
-        {/* Ícones sociais e localização */}
-        <div className="flex items-center gap-6 text-2xl text-gray-500">
-          <FaWhatsapp className="hover:text-green-500 cursor-pointer" />
-          <FaInstagram className="hover:text-pink-500 cursor-pointer" />
-          <FaMapMarkerAlt className="hover:text-red-500 cursor-pointer" />
-        </div>
       </div>
 
       {/* Linha inferior */}
