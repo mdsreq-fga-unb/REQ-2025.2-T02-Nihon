@@ -3,11 +3,45 @@ import { FaWarehouse, FaStore, FaRegStar, FaCreditCard } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 export default function Home() {
+  const categories = [
+    "Supermercado",
+    "Açougue",
+    "Padaria e confeitaria",
+    "Bar e restaurante",
+    "Refrigeração comercial",
+    "Automação Comercial",
+    "Equipamentos para cozinha",
+    "Mobiliário Comercial",
+    "Utensílios e suprimentos",
+  ];
+
   return (
     <div className="w-full min-h-screen bg-white pt-28 pb-5">
       {/* Banner vermelho */}
       <div className="w-full h-[450px] bg-[#E21414] flex items-center justify-center">
         <p className="text-white">Banner</p>
+      </div>
+
+      {/* categorias */}
+      <div className="w-full bg-white shadow-md py-5">
+        <div className="flex flex-wrap items-center justify-center gap-6 text-gray-700 text-sm">
+          {categories.map((category, index) => (
+            <motion.div
+              key={index}
+              className="flex items-center"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: index * 0.1 }}
+            >
+              <p className="hover:text-[#E21414] cursor-pointer transition-colors">
+                {category}
+              </p>
+              {index !== categories.length - 1 && (
+                <span className="mx-4 text-gray-300">|</span>
+              )}
+            </motion.div>
+          ))}
+        </div>
       </div>
 
       {/* principais produtos */}
@@ -23,7 +57,7 @@ export default function Home() {
             whileTap={{ scale: 0.95 }}
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.1, delay: i * 0.005 }}
+            transition={{ duration: 0.1, delay: i * 0.05 }}
           >
             <p className="text-gray-600">Produto {i + 1}</p>
           </motion.div>
@@ -32,25 +66,18 @@ export default function Home() {
 
       {/* diferenciais */}
       <div className="flex items-center gap-50 justify-center mt-30">
-        {/* Item 1 */}
         <div className="flex flex-col items-center">
           <FaWarehouse className="text-[#E21414] text-5xl mb-2" />
           <p className="text-gray-500">Estoque Próprio</p>
         </div>
-
-        {/* Item 2 */}
         <div className="flex flex-col items-center">
           <FaStore className="text-[#E21414] text-5xl mb-2" />
           <p className="text-gray-500">Mais de 200 lojas montadas</p>
         </div>
-
-        {/* Item 3 */}
         <div className="flex flex-col items-center">
           <FaRegStar className="text-[#E21414] text-5xl mb-2" />
           <p className="text-gray-500">28 anos de mercado</p>
         </div>
-
-        {/* Item 4 */}
         <div className="flex flex-col items-center">
           <FaCreditCard className="text-[#E21414] text-5xl mb-2" />
           <p className="text-gray-500 ">Pagamento facilitado</p>
@@ -63,46 +90,6 @@ export default function Home() {
           src="/images/datalogic.png"
           alt="Fornecedor 1"
           className="h-8 filter grayscale ml-10"
-        />
-        <img
-          src="/images/elginBematech.png"
-          alt="Fornecedor 2"
-          className="h-8 filter grayscale"
-        />
-        <img
-          src="/images/gelopar.png"
-          alt="Fornecedor 3"
-          className="h-8 filter grayscale"
-        />
-        <img
-          src="/images/gertec.png"
-          alt="Fornecedor 4"
-          className="h-8 filter grayscale"
-        />
-        <img
-          src="/images/datalogic.png"
-          alt="Fornecedor 1"
-          className="h-8 filter grayscale"
-        />
-        <img
-          src="/images/elginBematech.png"
-          alt="Fornecedor 2"
-          className="h-8 filter grayscale"
-        />
-        <img
-          src="/images/gelopar.png"
-          alt="Fornecedor 3"
-          className="h-8 filter grayscale"
-        />
-        <img
-          src="/images/gertec.png"
-          alt="Fornecedor 4"
-          className="h-8 filter grayscale"
-        />
-        <img
-          src="/images/datalogic.png"
-          alt="Fornecedor 1"
-          className="h-8 filter grayscale"
         />
         <img
           src="/images/elginBematech.png"

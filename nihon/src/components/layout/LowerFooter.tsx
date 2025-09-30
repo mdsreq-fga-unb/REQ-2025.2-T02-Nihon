@@ -1,64 +1,85 @@
 import Link from "next/link";
 import Image from "next/image";
-import { FaWhatsapp, FaInstagram, FaMapMarkerAlt } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-white shadow-xl border-t border-gray-200 px-6 py-8">
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-80">
+    <footer className="w-full bg-white shadow-xl border-t border-gray-200 px-6 py-10">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 text-gray-700 text-sm">
         
-        {/* Logo e endereço */}
-        <div className="flex flex-col items-center md:items-start text-gray-600">
+        {/* Logo e descrição */}
+        <div className="flex flex-col items-center md:items-start">
           <Image
-            src="/logo/logoHorizontal.jpeg" // coloque o path da sua logo aqui
+            src="/logo/NihonVertical.png" 
             alt="Logo Horizontal"
-            width={140}
-            height={70}
-            className="mb-3"
+            width={160}
+            height={80}
+            className="mb-4"
           />
-          <p className="text-sm text-center md:text-left">
-            QI 07 Lote 27/28 Taguatinga Norte <br />
-            Brasília - DF
+          <p className="text-center md:text-left">
+            Especializada em Tecnologia <br />
+            para o Varejo
           </p>
+          <div className="flex gap-4 mt-3 text-xl text-gray-600">
+            <a href="#" aria-label="Facebook">
+              <FaInstagram />
+            </a>
+            <a href="#" aria-label="Instagram">
+              <FaWhatsapp />
+            </a>
+          </div>
         </div>
 
         {/* Links Úteis */}
-        <nav className="flex flex-col items-center md:items-start gap-2 text-sm text-gray-600">
-          <Link href="#" className="hover:text-gray-800">Pós Venda</Link>
-          <Link href="#" className="hover:text-gray-800">Política de Privacidade</Link>
-          <Link href="#" className="hover:text-gray-800">Projetos Finalizados</Link>
-          <Link href="#" className="hover:text-gray-800">Contatos</Link>
-        </nav>
+        <div className="flex flex-col gap-2 items-center md:items-start">
+          <h3 className="font-semibold mb-2">Links Úteis</h3>
+          <Link href="#" className="hover:text-gray-900">Pós venda</Link>
+          <Link href="#" className="hover:text-gray-900">Política de privacidade</Link>
+          <Link href="#" className="text-pink-600 hover:text-pink-700">
+            Seja um parceiro de vendas
+          </Link>
+          <Link href="#" className="hover:text-gray-900">Projetos finalizados</Link>
+          <Link href="#" className="hover:text-gray-900">Contatos</Link>
+        </div>
 
-        {/* Televendas e WhatsApp */}
-        <div className="text-gray-600 text-sm text-center md:text-left">
-          <p><strong>Televendas:</strong> (61)</p>
-          <p>Segunda a Sexta-Feira</p>
-          <p>7:45 às 17:00hs</p>
+        {/* Televendas */}
+        <div className="flex flex-col gap-2 items-center md:items-start">
+          <h3 className="font-semibold mb-2">Televendas</h3>
+          <p>Segunda a sexta (9 às 18hs), Sábado (9 às 13hs).</p>
+          <p>
+            Parcele em até 10 vezes sem juros nos cartões de <br />
+            crédito, Visa ou Mastercard.
+          </p>
           <p className="mt-2">
-            Parcele em até 6 vezes nos cartões <br />
-            Visa ou Mastercard.
+            Compre pelo telefone: <strong>(61) 2107-7575</strong>
           </p>
           <a
             href="https://wa.me/seu-numero"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 justify-center md:justify-start mt-3 text-green-500 hover:text-green-600"
+            className="text-green-600 font-medium hover:text-green-700"
           >
-            <FaWhatsapp /> Fale conosco
+            Dúvidas? Fale conosco pelo WhatsApp
           </a>
+        </div>
+
+        {/* Informações Importantes */}
+        <div className="flex flex-col gap-2 items-center md:items-start">
+          <h3 className="font-semibold mb-2">Informações Importantes</h3>
+          <p>As imagens dos produtos são meramente ilustrativas.</p>
+          <p>
+            Todos os preços e condições comerciais estão sujeitos a alteração sem aviso prévio.
+          </p>
+          <p>
+            CND 13 Lt 11 Loja 01 - Taguatinga Norte <br />
+            Brasília DF
+          </p>
         </div>
       </div>
 
       {/* Linha inferior */}
-      <div className="border-t border-gray-300 mt-6 pt-4 text-center text-xs text-gray-500">
-        <p>
-          As imagens dos produtos são meramente ilustrativas. <br />
-          Todos os preços e condições comerciais estão sujeitos a alteração sem aviso prévio.
-        </p>
-        <p className="mt-2">
-          © {new Date().getFullYear()} Nihon. Todos os direitos reservados.
-        </p>
+      <div className="border-t border-gray-300 mt-8 pt-4 text-center text-xs text-gray-500">
+        © {new Date().getFullYear()} Nihon Automação. Todos os direitos reservados.
       </div>
     </footer>
   );
