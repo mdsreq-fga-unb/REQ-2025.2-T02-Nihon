@@ -1,6 +1,7 @@
 "use client";
 import { FaWarehouse, FaStore, FaRegStar, FaCreditCard } from "react-icons/fa";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Home() {
   const categories = [
@@ -18,13 +19,19 @@ export default function Home() {
   return (
     <div className="w-full min-h-screen bg-white pt-28 pb-5">
       {/* Banner vermelho */}
-      <div className="w-full h-[450px] bg-[#E21414] flex items-center justify-center">
-        <p className="text-white">Banner</p>
+      <div className="w-full h-[450px] relative">
+        <Image
+          src="/images/Banner_site_nihon.png"
+          alt="Banner principal"
+          fill
+          className="object-cover" // cobre toda a área sem distorcer
+          priority
+        />
       </div>
 
       {/* categorias */}
-      <div className="w-full bg-white shadow-md py-5">
-        <div className="flex flex-wrap items-center justify-center gap-6 text-gray-700 text-sm">
+      <div className="w-full bg-white shadow-sm  py-5 mt-5">
+        <div className="flex flex-wrap items-center justify-center gap-2 text-gray-700 text-sm">
           {categories.map((category, index) => (
             <motion.div
               key={index}
@@ -45,7 +52,7 @@ export default function Home() {
       </div>
 
       {/* principais produtos */}
-      <div className="flex items-center gap-20 justify-center px-8 mt-50">
+      <div className="flex items-center gap-20 justify-center px-8 mt-30">
         {[...Array(5)].map((_, i) => (
           <motion.div
             key={i}
