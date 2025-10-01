@@ -21,15 +21,18 @@ export default function Home() {
 
   return (
     <div className="w-full min-h-screen bg-white pt-28 pb-5">
-      {/* Banner vermelho */}
-      <div className="w-full h-[450px] relative">
-        <Image
-          src="/images/Banner_site_nihon.png"
-          alt="Banner principal"
-          fill
-          className="object-cover" // cobre toda a área sem distorcer
-          priority
-        />
+      {/* Banner principal responsivo */}
+      <div className="w-full relative">
+        <div className="relative w-full h-[220px] md:h-[360px] lg:h-[480px] xl:h-[560px]">
+          <Image
+            src="/images/Banner_site_nihon.png"
+            alt="Banner principal"
+            fill
+            sizes="100vw"
+            className="object-cover object-center"
+            priority
+          />
+        </div>
       </div>
 
       {/* categorias */}
