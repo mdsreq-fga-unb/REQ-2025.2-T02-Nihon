@@ -23,11 +23,18 @@ import UpperFooter from "@/components/layout/UpperFooter";
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR">
-      <body className="pb-24">     
-        <UpperFooter />
-        <main>{children}</main>
-        <Footer />
-      </body>
+  <body className="flex flex-col min-h-screen bg-white">
+    {/* Header fixo */}
+    <UpperFooter />
+
+    {/* Conteúdo rolável */}
+    <main className="bg-white pt-[72px]">
+      {children}
+    </main>
+
+    {/* Footer */}
+    <Footer />
+  </body>
     </html>
   );
 }
