@@ -15,7 +15,7 @@ export default function Upper_footer() {
             height={60}
           />
           <nav className="flex gap-15 text-sm ">
-            <Link href="/sobreNos" className="text-gray-500">Sobre nós</Link>
+            <Link href="/about" className="text-gray-500">Sobre Nós</Link>
             <Link href="/home" className="text-gray-500">Home</Link>
           </nav>
         </div>
