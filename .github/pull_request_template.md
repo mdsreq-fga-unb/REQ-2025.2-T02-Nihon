@@ -9,13 +9,31 @@ Corrige # (número da issue)
 ###Por favor, marque as opções relevantes:
 
 -[ ] 🐞 Correção de bug (mudança que não quebra o sistema e resolve um problema)
+
+
 -[ ] ✨ Nova funcionalidade (mudança que não quebra o sistema e adiciona uma nova funcionalidade)
+
+
 -[ ] ⚠️ Mudança que quebra o sistema (correção ou funcionalidade que pode fazer com que a funcionalidade existente não funcione como esperado)
+
+
 -[ ] 📚 Atualização de documentação
+
+
 
 ###Checklist
 -[ ] Meu código segue as diretrizes de estilo deste projeto
+
+
 -[ ] Eu revisei meu próprio código
+
+
 -[ ] Comentei meu código, especialmente em áreas de difícil compreensão
+
+
 -[ ] Fiz mudanças correspondentes na documentação
+
+
 -[ ] Minhas mudanças não geram novos avisos
+
+
