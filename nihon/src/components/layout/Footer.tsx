@@ -5,10 +5,10 @@ import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="w-full bg-white shadow-xl border-t border-gray-200 px-6 py-10">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 text-gray-700 text-sm">
+      <div className="container mx-auto xl:grid xl:grid-cols-4 gap-12 text-gray-700 text-sm">
         
         {/* Logo e descrição */}
-        <div className="flex flex-col items-center md:items-start">
+        <div className="flex flex-col items-center xl:items-start">
           <Image
             src="/logo/NihonVertical.png" 
             alt="Logo Horizontal"
@@ -16,7 +16,7 @@ export default function Footer() {
             height={80}
             className="mb-4"
           />
-          <p className="text-center md:text-left">
+          <p className="text-center xl:text-left">
             Especializada em Tecnologia <br />
             para o Varejo
           </p>
@@ -31,7 +31,7 @@ export default function Footer() {
         </div>
 
         {/* Links Úteis */}
-        <div className="flex flex-col gap-2 items-center md:items-start">
+        <div className="hidden xl:flex flex-col gap-2 items-start">
           <h3 className="font-semibold mb-2">Links Úteis</h3>
           <Link href="#" className="hover:text-gray-900">Pós venda</Link>
           <Link href="#" className="hover:text-gray-900">Política de privacidade</Link>
@@ -43,7 +43,7 @@ export default function Footer() {
         </div>
 
         {/* Televendas */}
-        <div className="flex flex-col gap-2 items-center md:items-start">
+        <div className="hidden xl:flex flex-col gap-2 items-start">
           <h3 className="font-semibold mb-2">Televendas</h3>
           <p>Segunda a sexta (9 às 18hs), Sábado (9 às 13hs).</p>
           <p>
@@ -64,7 +64,7 @@ export default function Footer() {
         </div>
 
         {/* Informações Importantes */}
-        <div className="flex flex-col gap-2 items-center md:items-start">
+        <div className="hidden xl:flex flex-col gap-2 items-start">
           <h3 className="font-semibold mb-2">Informações Importantes</h3>
           <p>As imagens dos produtos são meramente ilustrativas.</p>
           <p>

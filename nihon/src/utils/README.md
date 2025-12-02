@@ -1,0 +1,1 @@
+Funções auxiliares para todo o projeto

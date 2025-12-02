@@ -124,17 +124,24 @@
   }
   
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground m-0 p-0; /* reset margins/padding to avoid default browser offsets */
     font-family: "Arial Black", "Arial Bold", Arial, sans-serif;
   }
   
-  h1, h2, h3, h4, h5, h6 {
+  /* h1, h2, h3, h4, h5, h6 {
     font-family: "Arial Black", Arial, sans-serif;
     font-weight: 900;
-  }
+  } */
   
   p, span, div {
     font-family: "Arial", Arial, sans-serif;
     font-weight: 500;
+  }
+
+  /* make images and svgs responsive to prevent horizontal overflow */
+  img, svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
 }
