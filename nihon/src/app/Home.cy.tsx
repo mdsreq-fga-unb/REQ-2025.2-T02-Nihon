@@ -1,5 +1,5 @@
 import React from 'react'
-import Home from './page' // Importa o arquivo page.tsx que está NESTA mesma pasta (app)
+import Home from './(user)/page' // Importa o arquivo page.tsx que está NESTA mesma pasta (app)
 
 describe('<Home />', () => {
   
