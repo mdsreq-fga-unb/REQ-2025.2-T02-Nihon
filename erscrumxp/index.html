@@ -250,13 +250,13 @@
   
   
     <li class="md-tabs__item">
-      <a href="../video/" class="md-tabs__link">
+      <a href="../video1/" class="md-tabs__link">
         
   
   
     
   
-  Vídeo de Apresentação
+  Entregas
 
       </a>
     </li>
@@ -272,13 +272,13 @@
       </li>
 
       <li class="md-tabs__item">
-      <a href="../tabela/" class="md-tabs__link">
+      <a href="../evidencias/" class="md-tabs__link">
         
   
   
     
   
-  Tabela-Requisitos
+  Evidências
 
       </a>
     </li>
@@ -681,42 +681,42 @@
 
 <h1 id="4-Engenharia de Requisitos">4. Engenharia de Requisitos</h1>
 <h2 id="41-atividade e tecnicas de ER">4.1 Atividades e Técnicas de ER</h2>
+<p>O processo de Engenharia de Requisitos adotado para o projeto segue um ciclo contínuo e iterativo, integrado à metodologia ScrumXP. Abaixo, descrevemos como cada atividade é realizada e sua importância para o sucesso da solução:</p>
 <p>Elicitação e Descoberta</p>
 <ul>
-    <li>Entrevistas com o Cliente</li>
-    <li>Construção do Product Backlog</li>
+    <li><strong>Descrição:</strong> É o processo de identificar as necessidades, restrições e objetivos dos stakeholders.</li>
+    <li><strong>Aplicação no Projeto:</strong> Dado que o negócio da Nihon possui particularidades (venda consultiva versus e-commerce tradicional), utilizamos Entrevistas com o Cliente e reuniões periódicas para descobrir os requisitos reais. O resultado dessa atividade é a identificação inicial de itens para a Construção do Product Backlog.</li>
 </ul>
 <p>Análise e Consenso</p>
 <ul>
-    <li>Discusão interna</li>
-    <li>MoSCow</li>
-    <li>Discusão em Grupo</li>
-</ul>
-<p>Declaração de Requisitos</p>
+    <li><strong>Descrição:</strong> Envolve o refinamento dos requisitos brutos para resolver conflitos e definir prioridades claras.</li>
+    <li><strong>Aplicação no Projeto:</strong> A equipe utiliza a técnica MoSCoW para classificar o que é essencial para o MVP (como o "Catálogo de Produtos") e o que pode ser adiado. As Discussões em Equipe são fundamentais para alinhar o entendimento técnico entre desenvolvedores e o Product Owner, garantindo a viabilidade das entregas dentro das sprints quinzenais.</li>
+  </ul>
+<p>Declaração (Especificação)</p>
 <ul>
-    <li>Épicos</li>
-    <li>User Stories (Histórias de Usuário)</li>
-    <li>Incorporar FeedBack</li>
+  <li><strong>Descrição:</strong> É a documentação dos requisitos de forma que seja compreensível tanto para a equipe técnica quanto para o cliente.</li>
+    <li><strong>Aplicação no Projeto:</strong> Para manter a agilidade do ScrumXP, evitamos documentos longos e rígidos. Utilizamos Épicos para agrupar funcionalidades maiores e User Stories (Histórias de Usuário) para detalhar requisitos funcionais, focando sempre no valor entregue à persona (ex: "Como administrador, quero...").</li>
 </ul>
-<p>Representação de Requisitos</p>
+<p>Representação</p>
 <ul>
-    <li>Protótipos Figma</li>
+    <li><strong>Descrição:</strong> Uso de modelos visuais para complementar a especificação textual e reduzir ambiguidades.</li>
+    <li><strong>Aplicação no Projeto:</strong> A principal técnica utilizada é a Prototipagem de Alta Fidelidade no Figma. Como a "modernização da identidade visual" é um objetivo central (OE1), os protótipos permitem que o cliente valide a interface e a experiência do usuário (UX) antes que qualquer código seja escrito.</li>
 </ul>
-<p>Verificação e Validação de Requisitos</p>
+<p>Verificação e Validação</p>
 <ul>
-    <li>Checklists de Validação de Protótipo (Cliente)</li>
-    <li>DOR (Defi nition of Ready) (Equipe)</li>
-    <li>DOD (Defi nition of Done)</li>
-    <li>Checklist de Validação de Entrega (Cliente)</li>
-    <li>Revisão Users Stories</li>
-</ul>
-<p>Organização e Atualização de Requisitos</p>
+    <li><strong>Descrição:</strong> Garantia de que os requisitos foram especificados corretamente (Verificação) e de que o produto atende às necessidades do cliente (Validação).</li>
+    <li>
+      <p><strong>Aplicação no Projeto:</strong></p>
+      <ul>
+        <li><strong>Verficação:</strong> A equipe utiliza o DoR (Definition of Ready) para assegurar que uma história está pronta para desenvolvimento e o DoD (Definition of Done) para confirmar a qualidade da entrega.</li>
+        <li><strong>Validação:</strong> O cliente participa ativamente através de Reunião de Validação durante as Sprint Reviews, garantindo que o incremento de software (ex: Página "Sobre Nós" ou "Painel Administrativo") realmente resolva seu problema de negócio.</li>
+      </ul>
+    </li>
+  </ul>
+<p>Organização e Atualização/p>
 <ul>
-    <li>Grooming do Backlog</li>
-    <li>Revisão do Backlog da Sprint</li>
-    <li>Discussões em grupo</li>
-    <li>Análise de causas</li>
-    <li>Revisão do Backlog</li>
+    <li><strong>Descrição:</strong> Gerenciamento das mudanças nos requisitos ao longo do ciclo de vida do projeto.</li>
+    <li><strong>Aplicação no Projeto:</strong> Através do Grooming (Refinamento) do Backlog, a equipe revisa e reordena os requisitos constantemente com base no feedback do cliente e no aprendizado técnico da equipe, assegurando que o backlog reflita sempre as prioridades atuais do projeto.</li>
 </ul>
 
 <h2 id="42-Engenharias de Requisitos e ScrumXP">4.2 Engenharias de Requisitos e ScrumXP</h2>
@@ -729,7 +729,6 @@
             <th>Prática</th>
             <th>Técnica</th>
             <th>Resultados Esperados</th>
-            <th>Referência Bibliográfica</th>
           </tr>
         </thead>
         <tbody>
@@ -739,7 +738,6 @@
             <td>Levantar requisitos com o cliente</td>
             <td>Entrevistas com o Cliente</td>
             <td>Requisitos iniciais levantados, priorizados e alinhados com os objetivos do produto.</td>
-            <td>Beck, K. (2000). <em>Extreme Programming Explained</em>. Addison-Wesley.</td>
           </tr>
 
           <tr>
@@ -747,7 +745,6 @@
             <td>Refinar e alinhar requisitos</td>
             <td>Discussão interna; MoSCoW</td>
             <td>Entendimento compartilhado e requisitos consistentes.</td>
-            <td>Sommerville, I. (2011). <em>Software Engineering</em>. Addison-Wesley.</td>
           </tr>
 
           <tr>
@@ -755,7 +752,6 @@
             <td>Documentar requisitos de forma clara</td>
             <td>Épicos, User Stories</td>
             <td>Requisitos claros e compreensíveis para todos os stakeholders.</td>
-            <td>Cohn, M. (2004). <em>User Stories Applied</em>. Addison-Wesley.</td>
           </tr>
 
           <tr>
@@ -763,7 +759,6 @@
             <td>Verificar histórias de usuários</td>
             <td>Revisão das histórias de usuários</td>
             <td>Garantir que as histórias estejam de acordo com os objetivos do cliente.</td>
-            <td></td>
           </tr>
 
           <tr>
@@ -771,7 +766,6 @@
             <td>Construção do Backlog</td>
             <td>Construção do Product Backlog</td>
             <td>Backlog formado com os requisitos levantados.</td>
-            <td></td>
           </tr>
 
           <tr>
@@ -780,7 +774,6 @@
             <td>Consensualizar entendimento dos requisitos</td>
             <td>Discussões em equipe</td>
             <td>Reduzir ambiguidades/contradições e aumentar a consistência dos requisitos antes da execução.</td>
-            <td>Cockburn, A. (2001). <em>Agile Software Development</em>. Addison-Wesley.</td>
           </tr>
 
           <tr>
@@ -788,7 +781,6 @@
             <td>Refinar histórias de usuário</td>
             <td>User Stories</td>
             <td>User stories preparadas para a execução da sprint.</td>
-            <td>Cohn, M. (2004). <em>User Stories Applied</em>. Addison-Wesley.</td>
           </tr>
 
           <tr>
@@ -796,7 +788,6 @@
             <td>Criar representações visuais de requisitos</td>
             <td>Protótipos (Figma)</td>
             <td>Protótipos visuais que ilustram os requisitos a serem implementados na sprint.</td>
-            <td>—</td>
           </tr>
 
           <tr>
@@ -804,7 +795,6 @@
             <td>Garantir requisitos prontos para a sprint</td>
             <td>Checklists de Validação (Cliente); DOR (Definition of Ready)</td>
             <td>Garantir que os requisitos estejam prontos para desenvolvimento.</td>
-            <td>Schwaber, K.; Beedle, M. (2002). <em>Agile Software Development with Scrum</em>. Prentice Hall; Pohl, K. (2010). Requirements Engineering. Springer. </td>
           </tr>
 
           <tr>
@@ -812,7 +802,6 @@
             <td>Refinamento do Backlog</td>
             <td>Grooming do Backlog</td>
             <td>Requisitos do backlog revisados.</td>
-            <td></td>
           </tr>
 
           <tr>
@@ -821,7 +810,6 @@
             <td>Avaliar requisitos implementados</td>
             <td>DOD (Definition of Done)</td>
             <td>Confirmação de que o incremento implementado atende ao requisito proposto; Redução de erros e maior qualidade do produto entregue.</td>
-            <td>Schwaber, K.; Beedle, M. (2002). <em>Agile Software Development with Scrum</em>. Prentice Hall.</td>
           </tr>
 
           <tr>
@@ -829,7 +817,6 @@
             <td>Atualizar Backlog</td>
             <td>Revisão do Backlog da Sprint</td>
             <td>Visão atualizada e transparente do progresso e estado de cada requisito.</td>
-            <td></td>
           </tr>
 
           <tr>
@@ -838,7 +825,6 @@
             <td>Confirmar entrega dos requisitos</td>
             <td>Checklist de Validação de Entrega (Cliente)</td>
             <td>Confirmação de que as funcionalidades entregues atendem às expectativas do usuário.</td>
-            <td>Pohl, K. (2010). <em>Requirements Engineering</em>. Springer.</td>
           </tr>
 
           <tr>
@@ -846,7 +832,6 @@
             <td>Atualizar Histórias de Usuários com Feedback</td>
             <td>Coleta de Feedback</td>
             <td>User Stories ajustados de acordo com o FeedBack recebido.</td>
-            <td></td>
           </tr>
           
           <tr>
@@ -854,7 +839,6 @@
             <td>Atualizar requisitos com feedback</td>
             <td>Incorporar FeedBack</td>
             <td>Backlog ajustados de acordo com o FeedBack recebido.</td>
-            <td></td>
           </tr>
 
           <tr>
@@ -863,7 +847,6 @@
             <td>Avaliar o processo de requisitos utilizado</td>
             <td>Discussão em grupo</td>
             <td>Identificação de pontos fortes e fracos na gestão de requisitos.</td>
-            <td></td>
           </tr>
 
           <tr>
@@ -871,7 +854,6 @@
             <td>Revisar processos e organização dos requisitos</td>
             <td>Discussões em grupo; Análise de causas</td>
             <td>Melhorias identificadas e aplicáveis no processo de ER.</td>
-            <td></td>
           </tr>
 
           <tr>
@@ -880,7 +862,6 @@
             <td>Levantamento de novos requisitos</td>
             <td>Entrevistas; Construção do Product Backlog</td>
             <td>Requisitos revisados e atualizados com base no feedback do usuário.</td>
-            <td>Beck, K. (2000). <em>Extreme Programming Explained</em>. Addison-Wesley.</td>
           </tr>
 
           <tr>
@@ -888,7 +869,6 @@
             <td>Priorização estratégica</td>
             <td>Discussão em grupo</td>
             <td>Requisitos priorizados de acordo com as necessidades estratégicas da próxima release.</td>
-            <td>Sommerville, I. (2011). <em>Software Engineering</em>. Addison-Wesley.</td>
           </tr>
 
           <tr>
@@ -896,7 +876,6 @@
             <td>Definição de Épicos e User Stories</td>
             <td>Épicos; User Stories</td>
             <td>Definição de novos Épicos e Histórias de Usuários com base nos novos requisitos.</td>
-            <td>Cohn, M. (2004). <em>User Stories Applied</em>. Addison-Wesley.</td>
           </tr>
 
           <tr>
@@ -904,7 +883,6 @@
             <td>Verificação das Users Stories</td>
             <td>Revisão das novas Users Stories</td>
             <td>User Stories claras, alinhadas com os objetivos da próxima release.</td>
-            <td></td>
           </tr>
 
           <tr>
@@ -912,11 +890,56 @@
             <td>Reestruturar o Backlog</td>
             <td>Revisão do Backlog</td>
             <td>Roteiro de produto atualizado e documentado.</td>
-            <td></td>
           </tr>
         </tbody>
       </table>
     </section>
+
+<h2>4.3.1 Definição dos Épicos</h2>
+<p>Para organizar o backlog do produto e facilitar o planejamento das releases, as funcionalidades do sistema foram agrupadas em macro-entregas denominadas Épicos. Cada épico representa uma área de valor significativa para o negócio e é composto por diversas histórias de usuário.</p>
+<p><strong>Épico 01: Catálogo de Produtos e Descoberta</strong></p>
+<p>Descrição: Engloba todas as funcionalidades que permitem ao cliente final visualizar, buscar e filtrar os produtos oferecidos pela Nihon Automação.</p>
+<p>Objetivo: Facilitar a encontrabilidade dos produtos e apresentar o portfólio de forma atrativa.</p>
+<p>Histórias Relacionadas:</p>
+<ul>
+  <li>RF C.1 - <strong>US01</strong> – Como Nihon, quero poder exibir para meus clientes as minhas principais verticais, para que entendam minha área de atuação.</li>
+  <li>RF C.1 - <strong>US02</strong> – Como cliente da Nihon quero ter acesso rápido às áreas de atuação da Nihon.</li>
+  <li>RF D.1 - <strong>US03</strong> – Como cliente da Nihon, quero saber quais são os produtos do meu nicho de interesse.</li>
+  <li>RF D.2 - <strong>US04</strong> – Como cliente da Nihon, quero saber quais são os produtos relacionados a uma marca específica.</li>
+  <li>RF D.3 - <strong>US05</strong> – Como cliente da Nihon, quero ter poder ter informações sobre os produtos vendidos.</li>
+  <li>RF D.4 - <strong>US06</strong> – Como cliente da Nihon, quero poder ter visualizar produtos ativos.</li>
+  <li>RF G.1 - <strong>US08</strong> – Como cliente quero saber quais são as marcas dos produtos oferecidos.</li>
+</ul>
+<p><strong>Épico 02: Solicitação de Orçamento e Contato</strong></p>
+<p>Descrição: Foca na conversão do visitante em lead qualificado, permitindo a solicitação de orçamentos e o contato direto com a equipe comercial.</p>
+<p> Objetivo: Viabilizar o modelo de venda consultiva da empresa, conectando o cliente ao vendedor.</p>
+<p>Histórias Relacionadas:</p>
+<ul>
+  <li>RF E.1 - <strong>US07</strong> – Como cliente da Nihon, quero poder ser redirecionado para entrar em contato com a Nihon pelo WhatsApp.</li>
+</ul>
+<p><strong>Épico 03: Gestão Institucional e Conteúdo</strong></p>
+<p>Descrição: Área destinada à apresentação da empresa, sua história, casos de sucesso e informações de parceiros.</p>
+<p>Objetivo: Transmitir credibilidade e autoridade no mercado de automação comercial.</p>
+<p> Histórias Relacionadas:</p>
+<ul>
+  <li>RF I.1 - <strong>US09</strong> – Como cliente quero saber mais informações sobre a Nihon.</li>
+</ul>
+<p><strong>Épico 04: Administração do Sistema (Painel Administrativo)</strong></p>
+<p>Descrição: Funcionalidades restritas à equipe da Nihon para o gerenciamento do conteúdo do site.</p>
+<p> Objetivo: Dar autonomia para a empresa atualizar produtos, preços e destaques sem depender de desenvolvedores.</p>
+<p>Histórias Relacionadas:</p>
+<ul>
+  <li>RF M.1 - <strong>US10</strong> – Como administrador quero visualizar todos os produtos que estão cadastrados.</li>
+  <li>RF M.2 - <strong>US011</strong> – Como administrador quero poder cadastrar novos produtos.</li>
+  <li>RF M.3 - <strong>US12</strong> – Como administrador quero poder remover produtos cadastrados.</li>
+  <li>RF M.4 - <strong>US13</strong> – Como administrador, quero editar informações de um produto.</li>
+  <li>RF Q.2 - <strong>US14</strong> – Como administrador, quero fazer login para entrar no painel administrativo.</li>
+  <li>RF Q.3 - <strong>US15</strong> – Como administradora, quero fazer logout do painel administrativo.</li>
+</ul>
+
+
+
+
 
 
 

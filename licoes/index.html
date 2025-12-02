@@ -250,13 +250,13 @@
   
   
     <li class="md-tabs__item">
-      <a href="../video/" class="md-tabs__link">
+      <a href="../video1/" class="md-tabs__link">
         
   
   
     
   
-  Vídeo de Apresentação
+  Entregas
 
       </a>
     </li>
@@ -272,13 +272,13 @@
       </li>
 
     <li class="md-tabs__item">
-      <a href="../tabela/" class="md-tabs__link">
+      <a href="../evidencias/" class="md-tabs__link">
         
   
   
     
   
-  Tabela-Requisitos
+  Evidências
 
       </a>
     </li>
@@ -778,7 +778,32 @@
     <li><strong>Como foi superada: </strong>A equipe superou isso ao construir a tabela 4.2 ("Engenharias de Requisitos e ScrumXP"). Esse exercício forçou o mapeamento de cada atividade de ER a uma cerimônia específi ca do Scrum (ex: Elicitação no "Planejamento da Release", Verifi cação de Requisitos na "Execução da Sprint" com o DoD). Isso solidifi cou o entendimento de que a ER não é uma fase única, mas um conjunto de atividades contínuas durante todo o ciclo de vida do projeto.</li>
   </ul>
 </ul>
-
+<h2 id="102-unidade2">10.3 Unidade 3</h2>
+<p>Nesta unidade, o foco foi a garantia de qualidade e a implementação da infraestrutura de testes, essencial para assegurar a estabilidade do MVP antes da entrega final.</p>
+<ul>
+  <li>1. Complexidade nos Testes com Next.js (App Router)</li>
+  <ul>
+    <li><strong>Desafio: </strong>A equipe enfrentou dificuldades técnicas ao tentar testar páginas construídas com a arquitetura de Server Components do Next.js. Ferramentas de teste unitário tradicionais falhavam ao tentar renderizar componentes que dependiam de dados do servidor ou de contextos de roteamento (useRouter).</li>
+    <li><strong>Como foi superada: </strong>Adotamos uma estratégia híbrida de testes utilizando o framework Cypress. Utilizamos Testes E2E (End-to-End) para validar fluxos completos e integração com o banco de dados (Supabase) nas páginas de servidor, e Testes de Componente com Mocks (simulações) para validar a interatividade de componentes de cliente isolados, como botões e formulários.</li>
+  </ul>
+  <li>2. Conflitos de Integração e Dependências</li>
+  <ul>
+    <li><strong>Desafio: </strong>Durante a configuração do ambiente de testes, surgiram incompatibilidades entre bibliotecas de ícones (react-icons) e o bundler do projeto, além de conflitos de merge no controle de versão (Git) ao integrar o trabalho de diferentes membros na branch develop.</li>
+    <li><strong>Como foi superada: </strong>A equipe realizou a migração para bibliotecas compatíveis (@react-icons/all-files) e estabeleceu um fluxo de trabalho mais rígido no Git, utilizando Feature Branches para isolar o desenvolvimento de testes e resolvendo conflitos de forma colaborativa antes da abertura de Pull Requests.</li>
+  </ul>
+  <li>3. Validação de Responsividade e Cenários Reais</li>
+  <ul>
+    <li><strong>Desafio: </strong>Alguns testes automatizados falhavam indevidamente porque elementos da interface (como o botão de WhatsApp) ficavam ocultos em resoluções menores, simulando um falso erro na aplicação.</li>
+    <li><strong>Como foi superada: </strong>Ajustamos os scripts de teste para simular viewports (tamanhos de tela) específicos de Desktop e Mobile, garantindo que a aplicação fosse validada corretamente conforme os critérios de responsividade definidos nos Requisitos Não Funcionais (RNF L.1 e RNF L.2).</li>
+  </ul>
+</ul>
+<h2 id="102-unidade2">11. REFERÊNCIAS BIBLIOGRÁFICAS</h2>
+<p>BECK, K. (2000). Extreme Programming Explained. Addison-Wesley.</p>
+<p>COCKBURN, A. (2001). Agile Software Development. Addison-Wesley.</p>
+<p>COHN, M. (2004). User Stories Applied. Addison-Wesley.</p>
+<p>POHL, K. (2010). Requirements Engineering. Springer.</p>
+<p>SCHWABER, K.; BEEDLE, M. (2002). Agile Software Development with Scrum. Prentice Hall.</p>
+<p>SOMMERVILLE, I. (2011). Software Engineering. Addison-Wesley.</p>
 
 
 
@@ -823,13 +848,13 @@
         
         
           
-          <a href="../video/" class="md-footer__link md-footer__link--next" aria-label="Next: Vídeo de Apresentação">
+          <a href="../video1/" class="md-footer__link md-footer__link--next" aria-label="Next: Vídeo de Apresentação">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Vídeo de Apresentação
+                Entregas
               </div>
             </div>
             <div class="md-footer__button md-icon">

@@ -250,13 +250,13 @@
   
   
     <li class="md-tabs__item">
-      <a href="../video/" class="md-tabs__link">
+      <a href="../video1/" class="md-tabs__link">
         
   
   
     
   
-  Vídeo de Apresentação
+  Entregas
 
       </a>
     </li>
@@ -272,13 +272,13 @@
       </li>
 
       <li class="md-tabs__item">
-      <a href="../tabela/" class="md-tabs__link">
+      <a href="../evidencias/" class="md-tabs__link">
         
   
   
     
   
-  Tabela-Requisitos
+  Evidências
 
       </a>
     </li>
@@ -703,44 +703,58 @@
 <ul>
     <li>O requisito deve estar escrito no formato de história de usuário juntamente aos seus critérios de aceitação e ao seu épico;</li>
     <li>Os critérios de aceitação devem estar claros e devem ser revisados pelo time;</li>
-    <li>No caso da existência de interface, foram estritamente desenvolvidos protótipos para mobile, tablet e desktop e foram aprovados pelo cliente de acordo com os critérios definidos no checklist de validação de protótipos.</li>
+    <li>No caso da existência de interface, foram estritamente desenvolvidos protótipos para mobile, tablet e desktop e foram aprovados pelo cliente.</li>
 </ul>
 
 <h2 id="81=2-Definition of Done (DoD)">8.2 Definition of Done (DoD)</h2>
 <p>Diz respeito a quando um requisito é considerado feito, onde:</p>
 <ul>
-    <li>O código deve ser implementado de acordo com os critérios de aceitação, e em caso de componentes visuais deve ser estritamente aplicado conceitos de mobile-first utilizando os seguintes breakpoints para estilização com TailWindCSS:</li>
-    <ul>
-      <li>Largura inicial em 360px acrescendo de 15 em 15 pixels até 420px visando adaptar a maioria das resoluções existentes para dispositivos mobile ao protótipo validado;</li>
-      <li>No caso da existência de interface, deve ser estritamente desenvolvido protótipos para mobile, tablet e desktop que devem ser aprovados pelo cliente de acordo com os critérios definidos no checklist de validação de protótipos.</li>
-    </ul>
-    <li>Devem ser criados testes unitários e o código deve estar passando em todos eles;</li>
+    <li>O código deve estar implementado de acordo com a história de usuário e seus critérios de aceitação.</li>
+    <li> Devem ser criados testes e2e e o código deve estar passando no teste.</li>
 </ul>
 
 <h1 id="9-backlog-de-produto">9 BACKLOG DE PRODUTO</h1>
 <h2 id="91-backlog-geral">9.1 Backlog Geral (Exemplos de Histórias de Usuário)</h2>
+<p>O nosso backlog é composto pelas seguintes histórias de usuário:</p>
 <ul>
-    <li><strong>US01:</strong>Como administrador, quero fazer login no painel para gerenciar o conteúdo do site de forma segura.</li>
-    <li><strong>US02:</strong>Como administrador, quero cadastrar um novo produto com nome, descrição e imagens para manter o catálogo atualizado.</li>
-    <li><strong>US03:</strong>Como visitante, quero ver os principais nichos de atuação na página inicial para entender rapidamente o que a Nihon oferece.</li>
-    <li><strong>US04:</strong>Como potencial cliente, quero clicar em um nicho e ver a lista de produtos relacionados para encontrar o que preciso.</li>
-    <li><strong>US05:</strong>Como potencial cliente, quero preencher um formulário de orçamento para solicitar uma cotação de forma prática.</li>
-    <li><strong>US06:</strong>Como administrador, quero adicionar um novo "Caso de Sucesso" para demonstrar a credibilidade da empresa.</li>
-    <li><strong>US07:</strong>Como visitante, quero encontrar facilmente os contatos de WhatsApp e e-mail para falar com a empresa.</li>
-</ul>
+    <li>RF C.1 -<strong>US01:</strong>- Como Nihon, quero poder exibir para meus clientes as minhas principais verticais, para que entendam minha área de atuação.</li>
+    <li>RF C.1 -<strong>US02:</strong>- Como cliente da Nihon quero ter acesso rápido às áreas de atuação da Nihon.</li>
+    <li>RF D.1 -<strong>US03:</strong>-  Como cliente da Nihon, quero saber quais são os produtos do meu nicho de interesse.</li>
+    <li>RF D.2 -<strong>US04:</strong>- Como cliente da Nihon, quero saber quais são os produtos relacionados a uma marca específica.</li>
+    <li>RF D.3 -<strong>US05:</strong>- Como cliente da Nihon, quero ter poder ter informações sobre os produtos vendidos.</li>
+    <li>RF D.4 -<strong>US06:</strong>- Como cliente da Nihon, quero poder ter visualizar produtos ativos.</li>
+    <li>RF E.1 -<strong>US07:</strong>-  Como cliente da Nihon, quero poder ser redirecionado para entrar em contato com a Nihon pelo WhatsApp.</li>
+    <li>RF G.1 -<strong>US08:</strong>-  Como cliente quero saber quais são as marcas dos produtos oferecidos.</li>
+    <li>RF I.1 -<strong>US09:</strong>-  Como cliente quero saber mais informações sobre a Nihon.</li>
+    <li>RF M.1 -<strong>US010:</strong>-   Como administrador quero visualizar todos os produtos que estão cadastrados.</li>
+    <li>RF M.2 -<strong>US11:</strong>-  Como administrador quero poder cadastrar novos produtos.</li>
+    <li>RF M.3 -<strong>US12:</strong>-  Como administrador quero poder remover produtos cadastrados.</li>
+    <li>RF M.4 -<strong>US13:</strong>-  Como administrador, quero editar informações de um produto.</li>
+    <li>RF Q.2 -<strong>US14:</strong>-  Como administrador, quero fazer login para entrar no painel administrativo.</li>
+    <li>RF Q.3 -<strong>US15:</strong>-  Como administrador, quero fazer logout do painel administrativo.</li>
+  </ul>
+<p>E demais requisitos listados no tópico 7 que não possuem histórias de usuário.</p>
+<p>Foi priorizado o desenvolvimento de histórias de usuários apenas para requisitos que entraram no MVP.</p>
 <h2 id="92-priorizacao-do-backlog">9.2 Priorização do Backlog</h2>
-<p>A priorização do backlog será realizada utilizando uma matriz de Impacto vs. Esforço. Cada funcionalidade será avaliada quanto ao seu impacto no negócio (Alto, Médio, Baixo) e o esforço estimado para sua implementação (Alto, Médio, Baixo). Itens de alto impacto e baixo esforço serão priorizados, enquanto itens de baixo impacto e alto esforço serão deixados para o fi nal ou desconsiderados.</p>
+<p>A priorização do backlog será realizada utilizando uma matriz de Impacto vs. Esforço. Cada funcionalidade será avaliada quanto ao seu impacto no negócio (com MoSCoW) e o esforço estimado para sua implementação (Alto, Médio, Baixo). Itens de alto impacto e baixo esforço serão priorizados, enquanto itens de baixo impacto e alto esforço serão deixados para o final ou desconsiderados.</p>
 <h2 id="93-mvp">9.3 MVP (Produto Mínimo Viável)</h2>
-<p>O MVP será composto pelas funcionalidades classifi cadas com impacto ALTO e MÉDIO, garantindo que a primeira versão do site já entregue valor signifi cativo para a Nihon e seus clientes. O MVP incluirá:</p>
+<p>O MVP será composto pelas funcionalidades classificadas com impacto ALTO e MÉDIO, e complexidade BAIXA garantindo que a primeira versão do site já entregue valor significativo para a Nihon e seus clientes. O MVP incluirá as seguintes User Stories:</p>
 <ul>
-    <li>Autenticação de administrador.</li>
-    <li>Gerenciamento completo de produtos (CRUD).</li>
-    <li>Página inicial com exibição de nichos, seção "Sobre Nós" e contatos.</li>
-    <li>Páginas de listagem e detalhes de produtos.</li>
-    <li>Formulário para solicitação de orçamento.</li>
-    <li>Seção "Casos de Sucesso" (visualização).</li>
-    <li>Seção de Fornecedores/Parceiros.</li>
-    <li>Design responsivo.</li>
+    <li>RF C.1 - Como Nihon, quero poder exibir para meus clientes as minhas principais verticais, para que entendam minha área de atuação.</li>
+    <li>RF C.1 - Como cliente da Nihon quero ter acesso rápido às áreas de atuação da Nihon.</li>
+    <li>RF D.1 - Como cliente da Nihon, quero saber quais são os produtos do meu nicho de interesse.</li>
+    <li>RF D.2 - Como cliente da Nihon, quero saber quais são os produtos relacionados a uma marca específica.</li>
+    <li>RF D.3 - Como cliente da Nihon, quero ter poder ter informações sobre os produtos vendidos.</li>
+    <li>RF D.4 - Como cliente da Nihon, quero poder ter visualizar produtos ativos.</li>
+    <li>RF E.1 - Como cliente da Nihon, quero poder ser redirecionado para entrar em contato com a Nihon pelo WhatsApp.</li>
+    <li>RF G.1 - Como cliente quero saber quais são as marcas dos produtos oferecidos.</li>
+    <li>RF I.1 - Como cliente quero saber mais informações sobre a Nihon.</li>
+    <li>RF M.1 - Como administrador quero visualizar todos os produtos que estão cadastrados.</li>
+    <li>RF M.2 - Como administrador quero poder cadastrar novos produtos.</li>
+    <li>RF M.3 - Como administrador quero poder remover produtos cadastrados.</li>
+    <li>RF M.4 - Como administrador, quero editar informações de um produto.</li>
+    <li>RF Q.2 - Como administrador, quero fazer login para entrar no painel administrativo.</li>
+    <li>RF Q.3 -Como administrador, quero fazer logout do painel administrativo.</li>
 </ul>
 
 
