@@ -100,5 +100,9 @@
           <loc>https://example.com/deploy/</loc>
           <lastmod>2025-09-16</lastmod>
      </url>
+     <url>
+          <loc>https://example.com/bancos/</loc>
+          <lastmod>2025-09-16</lastmod>
+     </url>
      
 </urlset>

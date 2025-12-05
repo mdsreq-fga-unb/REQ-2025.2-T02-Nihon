@@ -710,20 +710,65 @@
 <p>O nosso backlog é composto pelas seguintes histórias de usuário:</p>
 <ul>
     <li>RF C.1 -<strong>US01:</strong>- Como Nihon, quero poder exibir para meus clientes as minhas principais verticais, para que entendam minha área de atuação.</li>
+    <ul>
+      <li>Critérios de aceitação: Visualização: Exibir seção "Nichos de Atuação" na Home com cards contendo ícone/imagem e título. Navegação: Ao clicar no card, redirecionar para a página de produtos filtrando automaticamente pela vertical selecionada. Responsividade: Layout deve se adaptar a dispositivos móveis (Mobile-First) e desktop (Grid). Gestão: Permitir edição de títulos e imagens das verticais através do Painel Administrativo.</li>
+    </ul>
     <li>RF C.1 -<strong>US02:</strong>- Como cliente da Nihon quero ter acesso rápido às áreas de atuação da Nihon.</li>
+    <ul>
+      <li>Critérios de aceitação: Visibilidade na Home: As áreas de atuação (ex: Padaria, Açougue, Supermercado) devem estar em destaque na página inicial, sem necessidade de rolagem excessiva ou navegação em menus profundos. Identificação Visual: Cada área deve ser representada por um "Card" contendo nome legível e imagem/ícone alusivo ao nicho. Ação de Clique: Ao clicar em uma área de atuação, o usuário deve ser redirecionado imediatamente para a lista de produtos filtrada por aquele nicho. Performance: O carregamento desses elementos deve ser instantâneo para garantir o "acesso rápido" solicitado.</li>
+    </ul>
     <li>RF D.1 -<strong>US03:</strong>-  Como cliente da Nihon, quero saber quais são os produtos do meu nicho de interesse.</li>
+    <ul>
+      <li>Critérios de aceitação: Filtragem por Nicho: Ao selecionar um segmento (ex: "Açougue"), a listagem de produtos deve ser atualizada para exibir apenas os itens vinculados a essa categoria. Conteúdo do Card: Cada item listado deve apresentar, no mínimo, a imagem do produto e seu nome para fácil reconhecimento.</li>
+    </ul>
     <li>RF D.2 -<strong>US04:</strong>- Como cliente da Nihon, quero saber quais são os produtos relacionados a uma marca específica.</li>
+    <ul>
+      <li>Critérios de aceitação: Seleção de Marca: Ao clicar no logotipo de um fornecedor (na seção de Parceiros/Fornecedores), o sistema deve redirecionar para a página de produtos. Filtragem Automática: A página de destino deve exibir apenas os produtos vinculados àquela marca específica. Feedback Visual: Deve ficar claro para o usuário qual marca está sendo filtrada no momento (ex: Título "Produtos Toledo" ou filtro lateral marcado).</li>
+    </ul>
     <li>RF D.3 -<strong>US05:</strong>- Como cliente da Nihon, quero ter poder ter informações sobre os produtos vendidos.</li>
+      <ul>
+        <li>Critérios de aceitação: Visualização Completa: Ao acessar o produto, o cliente deve ver o nome completo, uma descrição detalhada e imagens de alta qualidade. Acesso aos Detalhes: O clique em qualquer card na lista de produtos deve levar diretamente à página exclusiva de detalhes daquele item. Ação de Conversão: A página deve exibir um botão de destaque ("Solicitar Orçamento" ou "WhatsApp") para que o cliente possa iniciar a negociação imediatamente.</li>
+      </ul>
     <li>RF D.4 -<strong>US06:</strong>- Como cliente da Nihon, quero poder ter visualizar produtos ativos.</li>
+      <ul>
+        <li>Cirtérios de aceitação: Filtragem de Status: A listagem pública deve exibir apenas os produtos marcados como "Ativos"  no banco de dados. Ocultação Automática: Produtos desativados ou excluídos logicamente pelo administrador (via Painel) devem sumir instantaneamente da visão do cliente. Conteúdo do Card: Cada produto ativo listado deve apresentar imagem, título e categoria para fácil identificação.</li>
+      </ul>
     <li>RF E.1 -<strong>US07:</strong>-  Como cliente da Nihon, quero poder ser redirecionado para entrar em contato com a Nihon pelo WhatsApp.</li>
+      <ul>
+        <li>Cirtérios de aceitação: Redirecionamento: O redirecionamento deve ser realizado para o telefone correto de contato da Nihon</li>
+      </ul>
     <li>RF G.1 -<strong>US08:</strong>-  Como cliente quero saber quais são as marcas dos produtos oferecidos.</li>
+      <ul>
+        <li>Critérios de aceitação: Os fornecedores devem ser fornecedores validados pela Nihon.</li>
+      </ul>
     <li>RF I.1 -<strong>US09:</strong>-  Como cliente quero saber mais informações sobre a Nihon.</li>
+      <ul>
+        <li>Creitérios de aceitação: Deve conter informações sobre a história da empresa, experiência, valores, localização e contato.</li>
+      </ul>
     <li>RF M.1 -<strong>US010:</strong>-   Como administrador quero visualizar todos os produtos que estão cadastrados.</li>
+      <ul>
+        <li>Critérios de aceitação: Os produtos disponíveis para visualização devem ser produtos tanto ativos quanto inativos.</li>
+      </ul>
     <li>RF M.2 -<strong>US11:</strong>-  Como administrador quero poder cadastrar novos produtos.</li>
+      <ul>
+        <li>Deve ser possível as seguintes informações: Nome, Tipo, Descrição, Verticais associados,Fotos do produto</li>
+      </ul>
     <li>RF M.3 -<strong>US12:</strong>-  Como administrador quero poder remover produtos cadastrados.</li>
+      <ul>
+        <li>Critérios de aceitação: Deve ser emitido um pop-up de confirmação de exclusão do produto.</li>
+      </ul>
     <li>RF M.4 -<strong>US13:</strong>-  Como administrador, quero editar informações de um produto.</li>
+    <ul>
+      <li>Critérios de aceitação: As alterações devem ser confirmadas antes de editar.</li>
+    </ul>
     <li>RF Q.2 -<strong>US14:</strong>-  Como administrador, quero fazer login para entrar no painel administrativo.</li>
+      <ul>
+        <li>Cirtérios de aceitação: Deve ser validado através do supabase.</li>
+      </ul>
     <li>RF Q.3 -<strong>US15:</strong>-  Como administrador, quero fazer logout do painel administrativo.</li>
+      <ul>
+        <li>Critérios de aceitação: O logout deve ser confirmado.</li>
+      </ul>
   </ul>
 <p>E demais requisitos listados no tópico 7 que não possuem histórias de usuário.</p>
 <p>Foi priorizado o desenvolvimento de histórias de usuários apenas para requisitos que entraram no MVP.</p>

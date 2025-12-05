@@ -931,11 +931,6 @@
 </tr>
 <tr>
 <td><strong>OE5</strong></td>
-<td>Permitir que as diferentes personas possam navegar no site.</td>
-<td>Aumento em 5% na quantidade de clientes que proc</td>
-</tr>
-<tr>
-<td><strong>OE6</strong></td>
 <td>Garantir autonomia da empresa no gerenciamento do site de forma segura</td>
 <td>Aumento em 7% no engajamento dos clientes com a empresa.</td>
 </tr>
@@ -946,32 +941,32 @@
 <p>A solução será uma <strong>aplicação web institucional</strong>, com funcionalidades de apoio digital, desenvolvida para transmitir a identidade da Nihon Automação de forma moderna, simples e acessível. O design será minimalista, inspirado em interfaces limpas e intuitivas, visando atender tanto clientes mais velhos (com usabilidade simplificada) quanto jovens empreendedores (com uma experiência moderna e fluida).</p>
 <h3 id="principais-caracteristicas-do-produto">Principais características do produto</h3>
 <ul>
-<li>
-<p><strong>Estética moderna e intuitiva (OE1):</strong> visual atrativo para novos clientes jovens, sem comprometer a usabilidade para clientes mais velhos.</p>
-</li>
-<li>
-<p><strong>Exibição dos principais nichos de atuação (OE2):</strong> destaque claro para segmentos atendidos, com listagem objetiva dos principais produtos por categoria.  </p>
-</li>
-<li>
-<p><strong>Encaminhamento de clientes para contato (OE3):</strong> acesso rápido a canais diretos como e-mail e WhatsApp.</p>
-</li>
-<li>
-<p><strong>Exibição de fornecedores parceiros (OE4):</strong> apresentação de informações relevantes logos oficiais.</p>
-</li>
-<li>
-<p><strong>Exibição de casos de sucesso (OE5):</strong> exibição dos principais clientes já atendidos e projetos bem sucedidos.</p>
-</li>
-<li>
-<p><strong>Painel administrativo (OE6):</strong> área para que a própria equipe da Nihon possa atualizar produtos, fornecedores e casos de sucesso, permitindo que o site esteja de acordo com o estoque e situação atual da empresa.</p>
-</li>
+  <li><strong>A. Ser uma aplicação web (OE1):</strong>  Garantir que o sistema seja acessível diretamente pelo navegador, sem necessidade de instalação, facilitando o acesso para todos os usuários.</li>
+  <li><strong>B. Garantir visibilidade nos navegadores (OE1):</strong> Assegurar que todas as páginas e conteúdos sejam exibidos corretamente nos principais navegadores modernos, mantendo compatibilidade e estabilidade.</li>
+  <li><strong>J. Garantir design moderno e minimalista (OE1):</strong> Aplicar uma identidade visual contemporânea, limpa e objetiva, reforçando profissionalismo e clareza na apresentação das informações.</li>
+  <li><strong>K. Garantir navegação clara e simplificada (OE1):</strong> Estruturar a interface de forma intuitiva, permitindo que o usuário encontre rapidamente o que procura, reduzindo esforço cognitivo.</li>
+  <li><strong>L. Garantir a portabilidade para desktop e mobile (OE1):</strong> Desenvolver o site de forma responsiva, garantindo boa usabilidade em diferentes tamanhos de tela, dispositivos e resoluções.</li>
+  <li><strong>C. Exibir os principais nichos de atuação da Nihon (OE2):</strong> Apresentar de forma clara os setores atendidos pela empresa, destacando especializações e áreas de expertise.</li>
+  <li><strong>D. Exibir os produtos que a Nihon oferece (OE2):</strong> Listar e detalhar os produtos disponíveis, permitindo ao usuário conhecer as soluções oferecidas pela empresa.</li>
+  <li><strong>E. Disponibilizar canais externos de contato (OE3):</strong> Fornecer links diretos para WhatsApp, e-mail, redes sociais ou outros meios de comunicação da empresa.</li>
+  <li><strong>F. Possibilitar o pedido de orçamento pelo site (OE3):</strong> Permitir que o usuário envie uma solicitação de orçamento online, preenchendo informações básicas sobre suas necessidades.</li>
+  <li><strong>G. Exibir fornecedores (OE4):</strong> Apresentar os principais fornecedores parceiros da Nihon, reforçando credibilidade e transparência.</li>
+  <li><strong>H. Exibir casos de sucesso (OE4):</strong> Mostrar projetos ou clientes atendidos com êxito, destacando resultados alcançados e demonstrando autoridade no mercado.</li>
+  <li><strong>I. Exibir informações gerais sobre a empresa (OE4):</strong> Disponibilizar histórico, missão, visão e valores da Nihon, proporcionando ao usuário compreensão sobre sua identidade e propósito.</li>
+  <li><strong>M. Disponibilizar uma seção de gerenciamento de produtos (OE5):</strong> Permitir que administradores cadastram, atualizem e removam produtos exibidos no site por meio de um painel de controle.</li>
+  <li><strong>N. Disponibilizar uma seção de gerenciamento de caso de sucesso (OE5):</strong> Oferecer ferramentas para criar e editar casos de sucesso, organizando as informações apresentadas ao público.</li>
+  <li><strong>O. Permitir o recebimento automático de orçamentos feitos no site (OE5)</strong> Garantir que as solicitações enviadas pelos usuários sejam automaticamente encaminhadas aos administradores responsáveis.</li>
+  <li><strong>P. Permitir o gerenciamento de orçamentos feitos no site (OE5):</strong> Oferecer recursos para visualizar, responder e acompanhar orçamentos enviados pelos clientes.</li>
+  <li><strong>Q. Permitir login por parte dos adminatrador da nihon (OE5):</strong> Restringir o acesso às áreas administrativas por meio de autenticação segura, garantindo integridade dos dados.</li>
+  <li><strong>R.  Viabilizar futuras atualizações (OE5):</strong> Estruturar o sistema de forma modular e escalável, permitindo que novas funcionalidades sejam adicionadas sem comprometer o funcionamento atual.</li>
 </ul>
-<hr />
+<hr/>
 <h2 id="23-tecnologias-a-serem-utilizadas">2.3 Tecnologias a Serem Utilizadas</h2>
-<p>Frontend:</p>
+<p><strong>Frontend + Backend:</strong></p>
 <ul>
-<li>Next.js: Será responsável por renderizar as páginas de categorias, produtos e projetos, tanto para usuários comuns quanto para o administrador.</li>
+<li>Next.js: O frontend será implementado dentro do próprio projeto Next.js utilizando React que será responsável por renderizar as páginas da aplicação para os usuários.</li>
 </ul>
-<p>Backend:</p>
+<p>Database:</p>
 <ul>
 <li>API Routes do Next.js: O backend será implementado dentro do próprio projeto Next.js, usando rotas serverless.</li>
 </ul>
@@ -991,26 +986,25 @@
 <p><strong>Etitec Soluções Inteligentes:</strong> possui pouca variedade em seu catálogo de produtos e não apresenta informações sobre casos de projetos bem-sucedidos, focando apenas na venda de produtos.</p>
 </li>
 <li>
-<p><strong>Catral:</strong> também não apresenta informações sobre projetos de sucesso, mantendo o foco apenas na venda de produtos.  </p>
+<p><strong>Catral:</strong> Não possui informações sobre casos de projetos que foram um sucesso, visando apenas a venda dos produtos.</p>
 </li>
 </ul>
-<h3 id="diferenciais-da-solucao-da-nihon">Diferenciais da Solução da Nihon</h3>
-<p>A proposta da Nihon Automação se diferencia por:</p>
+<p id="diferenciais-da-solucao-da-nihon">A solução da Nihon se diferencia por:</p>
 <ul>
 <li>
-<p><strong>Atendimento consultivo:</strong> A solução que a empresa busca não é um e-commerce, seu foco é fornecer atendimento direto ao cliente com a expertise da equipe Nihon para aumentar a confi ança do cliente.</p>
+<p><strong>Atendimento consultivo:</strong> A solução que a empresa busca não é um e-commerce, seu foco é fornecer atendimento direto ao cliente com a expertise da equipe Nihon para aumentar a confiança do cliente.</p>
 </li>
 <li>
 <p><strong>Catálogo amplo e administrável:</strong> O estoque de produtos da Nihon que é similar e em alguns casos maior que o da concorrência será completamente administrável de forma intuitiva pelos próprios administradores da empresa.</p>
 </li>
 <li>
-<p><strong>Visibilidade de projetos realizados:</strong> Fornece uma visão de confi ança e compromisso da Nihon para e com seus clientes.  </p>
+<p><strong>Visibilidade de projetos realizados:</strong> Fornece uma visão de confiança e compromisso da Nihon para e com seus clientes.  </p>
 </li>
 </ul>
 <hr />
 <h1 id="25-analise-de-viabilidade">2.5 Análise de Viabilidade</h1>
-<p>A viabilidade do projeto é tida como <strong>média</strong> tendo em vista que a equipe de desenvolvimento ainda não possui muita experiência com a realização de projetos e nem com as tecnologias que serão utilizadas <strong>(Next.JS e Supabase)</strong>, sendo que por outro lado a equipe se encontra bastante motivada para desenvolvê-lo. A integração entre o frontend e o banco de dados do sistema será feita através da <strong>Routes do Next.JS</strong> permitindo integração simplifi cada entre as partes constituintes do sistema.</p>
-<p>O prazo estimado para desenvolvimento do projeto é de três meses, que será dividido em sprints de 2 semanas, totalizando 7 sprints. Cada sprint terá entregas relacionadas ao andamento do projeto, indo desde a defi nição da visão do produto até a entrega das funcionalidades previstas como objetivos específi cos. O cronograma é considerado um desafi o tendo em vista que a equipe é composta por universitários que além de terem que arcar com a grande quantidade de matérias que realizam, eventualmente participam de programas de estágio.</p>
+<p>A viabilidade do projeto é tida como <strong>média</strong> tendo em vista que a equipe de desenvolvimento ainda não possui muita experiência com a realização de projetos e nem com as tecnologias que serão utilizadas <strong>(Next.JS e Supabase)</strong>, sendo que por outro lado a equipe se encontra bastante motivada para desenvolvê-lo. A integração entre o frontend e o banco de dados do sistema será feita através do próprio <strong>Next.JS</strong> permitindo integração simplificada entre as partes constituintes do sistema.</p>
+<p>O prazo estimado para desenvolvimento do projeto é de três meses, que será dividido em sprints de 2 semanas, totalizando 7 sprints. Cada sprint terá entregas relacionadas ao andamento do projeto, indo desde a definição da visão do produto até a entrega das funcionalidades previstas como objetivos específicos. O cronograma é considerado um desafio tendo em vista que a equipe é composta por universitários que além de terem que arcar com a grande quantidade de matérias que realizam, eventualmente participam de programas de estágio e atividades extensionistas.</p>
 <hr />
 <h1 id="26-impacto-da-solucao">2.6 Impacto da Solução</h1>
 <p>É esperado que a nova aplicação web traga uma série de benefícios para a Nihon:</p>
@@ -1021,7 +1015,7 @@
 <li>
 <p><strong>Construção de uma presença digital estratégica:</strong> A solução apresentará de forma clara e organizada os setores de atuação e o portfólio da Nihon, transmitindo confi ança e reforçando a identidade da empresa no ambiente online.</p>
 </li>
-<li>
+<li> 
 <p><strong>Melhoria da conversão e geração de confiança:</strong> A exibição de um catálogo de produtos atualizado e de casos de projetos bem-sucedidos facilitará a tomada de decisão do cliente, aumentando o interesse de compra e a taxa de conversão.  </p>
 </li>
 </ol>
